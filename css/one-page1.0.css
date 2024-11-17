@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+a{
+    text-decoration: none!important;
+}
+#header {
+    padding: 35px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+#header .header-nav {
+    display: flex;
+    justify-content: end;
+}
+#header .nav-list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-right: 150px;
+    margin-bottom: 0;
+}
+#header .nav-list a {
+    color: #f3f2ff;
+    font-weight: 400;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+#header .nav-list a:hover {
+    color: #b4b1ff;
+    font-weight: 700;
+    text-decoration: underline 3px solid!important;
+}
+
+/*botones para el header y main*/
+.header-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.header_btn_login a {
+    color: #f3f2ff;
+    border: 1px solid #ffffff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+.header_btn_login a:hover {
+    background-color: #f3f2ff;
+    color: #1b0b6a;
+    font-weight: bold;
+}
+.header_btn_sing a {
+    background-color: #1b0b6a;
+    color: #f3f2ff;
+    padding: 6px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+.header_btn_sing a:hover {
+    background-color: #f3f2ff;
+    color: #1b0b6a;
+    font-weight: bold;
+}
+
+/*menu*/
+#main{
+    background-image: url(../img/csm.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main *{
+    position: relative;
+    z-index: 3;
+}
+#main::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+#main .main-text{
+    color: #f3f2ff;
+    font-weight: bold;
+}
+#main .main-text h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+#main .main-text span{
+    font-size: 65px;
+}
+#main .btn-main a {
+    padding: 10px 70px;
+    font-size: 18px;
+}
+
+/* libreria  putaku*/
+#library{
+    padding: 50px 0;
+}
+#library .lbr-titulo h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #1b0b6a;
+    text-transform: uppercase;
+}
